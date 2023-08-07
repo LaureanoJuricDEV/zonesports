@@ -1,0 +1,695 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*FAMILIA DE FUENTES
+
+font-family:'Jost', sans-serif;
+
+font-family: 'Electrolize', sans-serif;
+
+*/
+
+:root{
+    --rosa : #e3007b;
+    --violeta: #250834;
+    --celeste: #3999d2;
+}
+body{
+    background-image: url(Imagenes/Background_ZoneSports.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*-------ESTILO DEL NAV*******+++*/
+
+.buttonWhatsapp{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    top: 82vh;
+    left: 90vw;
+    cursor: pointer;
+}
+.buttonWhatsapp img{
+    width: 100%;
+}
+.buttonWhatsapp:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+    filter: drop-shadow(0px 0px 10px #25D366);
+}
+.containerNav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: rgb(37,8,52);
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(37,8,52,1) 0%, rgba(37,8,52,0) 100%);
+}
+.containerNavImg{
+    margin-left: 5%;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerNavImg img{
+    width: 70%;
+}
+a{
+    text-decoration: none;
+}
+
+/*--------ESTILO DEL MAIN-----------*/
+.containerMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.containerTittle{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:3rem;
+    color: #fff;
+    font-family: 'Electrolize', sans-serif;
+}
+.buttonAction{
+    outline: none;
+    border: none;
+    width: 15vw;
+    height: 10vh;
+    color: #fff;
+    background-color: var(--rosa);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-family: 'Jost', sans-serif;
+    margin-top: 5vh;
+    border-radius: 15px;
+}
+.buttonAction:hover{
+    transform: scale(1.1);
+    background-color:  #dd047b;
+    transition: all 1s;
+}
+
+.containerConsolas{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    box-shadow: -1px -18px 21px -11px rgba(57,153,210,0.79);
+    -webkit-box-shadow: -1px -18px 21px -11px rgba(57,153,210,0.79);
+    -moz-box-shadow: -1px -18px 21px -11px rgba(57,153,210,0.79);
+}
+.containerConsolas article{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.containerConsolas img{
+    height: 30%;
+    cursor: pointer;
+}
+.containerConsolas img:hover{
+    filter: drop-shadow(0px 0px 10px #3999d2);
+    transition: all .5s;
+}
+
+.containerPlataforma{
+    background-color: #1d1d1d;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: 'Electrolize';
+    color: #fff;
+   
+}
+span{
+    color: var(--rosa);
+}
+
+.buttonAction2{
+    outline: none;
+    border: 1px solid var(--rosa);
+    background: none;
+    color: white;
+    margin-top: 5vh;
+    width: 15vw;
+    height: 7vh;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+.buttonAction2:hover{
+    background-color: #1f1f1f;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.containerTittleAboutMe{
+    width: 100%;
+    height: 10vh;
+    background-color:#1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerTittleAboutMe div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 70%;
+    height: 100%;
+    font-family: 'Electrolize', sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+}
+h2:hover{
+    filter: drop-shadow(0px 0px 10px #3999d2);
+    transition: all .5s;
+    cursor:context-menu;
+    display: inline;
+}
+.containerAboutMe{
+    width: 100%;
+    height: 30vh;
+    background-color:#1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Electrolize';
+    text-align: justify;
+    
+}
+.containerAboutMeText{
+    height: 100%;
+    width: 70%;
+    color: #fff;
+}
+.containerAboutMeText span {
+    color: var(--rosa);
+}
+
+.containerInstagram{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1f1f;
+}
+.containerInstagramTittle{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Electrolize',sans-serif;
+    color: var(--rosa);
+    font-size: 4rem;
+    font-weight: bold;
+}
+.containerInstagramTittle a{
+    color: #fff;
+    border-left: 3px solid var(--rosa);
+    padding: 5%;
+}
+.containerInstagramTittle a:hover{
+    color: var(--rosa);
+    border-color: var(--celeste);
+    transition: all 1s;
+}
+
+.containerInstagramImg{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+    box-shadow: 7px 6px 10px 16px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 6px 10px 16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 10px 16px rgba(0,0,0,0.75);
+}
+.containerInstagramImgIg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 80%;
+}
+.igImg{
+    height: 95%;
+    width:100%;
+    border-radius: 5px;
+}
+
+.containerDiscord{
+    background-color: #1d1d1d;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 9px 10px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 9px 10px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 9px 10px 10px rgba(0,0,0,0.75);
+
+    
+}
+.containerDiscord a{
+    font-family: 'Electrolize', sans-serif;
+    color:var(--celeste);
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    border-radius: 15px;
+}
+.containerDiscord a:hover{
+    background-color: #fff;
+    transition: all 1s;
+}
+.containerModalidades{
+    width: 100%;
+    height: 100vh;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.containerModalidades a{
+    color: #fff;
+}
+.containerModalidadesTittle{
+    margin-top: 5vh;
+    font-size: 2rem;
+    font-family: 'Electrolize', sans-serif;
+    color: #fff;
+}
+
+.containerModalidadesOptions{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1f1f1f
+}
+.containerModalidadesOptions h3:hover{
+    filter: drop-shadow(0px 0px 10px #3999d2);
+    transition: all .5s;
+    cursor:context-menu;
+    display: inline;
+}
+
+
+.containerOptionsImg{
+    height: 60%;
+    width: 25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    background-image: url(Imagenes/Fondo_Champions.png);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid var(--celeste);
+}
+.containerOptionsImg h3{
+    font-size: 2rem;
+    color: #fff;
+    font-family: Electrolize;
+}
+.containerOptions{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    margin-left: 2%;
+    flex-direction: column;
+}
+.containerOptionsTittle{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    color: white;
+    font-family: Electrolize;
+}
+.containerOptionsTittle article{
+    cursor: pointer;
+    margin: 0 5%;
+    height: 40%;
+    font-size: 1.3rem;
+}
+#championsTittle {
+    border-bottom: 3px solid var(--rosa);
+}
+
+.containerOptionsDescription{
+    height: 60%;
+    width: 100%;
+    color:white;
+    font-size: 1.2rem;
+    font-family: Electrolize;
+}
+.containerOptionsDescription article{
+    padding: 5%;
+}
+
+.containerOptionsTittle article:hover{
+    color: var(--rosa);
+}
+
+.containerOptionsButton{
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;    
+}
+.buttonOption{
+    margin-left: 5%;
+    height: 60%;
+    width: 15%;
+    outline: none;
+    border: none;
+    background-color: var(--rosa);
+    font-family: Electrolize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonOption a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonOption:hover{
+    border-radius: 50px;
+    background-color: var(--celeste);
+    transition: all 1s;
+}
+
+.descriptionChampions{
+    display:  none;
+}
+.descriptionLiga{
+    display: none;
+}
+.descriptionMundial{
+    display: block;
+}
+.descriptionLibre{
+    display: none;
+}
+.descriptionMas{
+    display: none;
+}
+
+.containerReady{
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.containerReadyTittle{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size: 3rem;
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    font-weight: bold;
+}
+.containerReadyImg{
+    background-image: url(Imagenes/Fondo_Cuadro_Zone.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 30%;
+    border-radius: 15px;
+    -webkit-box-shadow: -4px 2px 18px 41px rgba(57,153,210,1);
+    -moz-box-shadow: -4px 2px 18px 41px rgba(57,153,210,1);
+    box-shadow: -4px 2px 48px 11px rgba(57,153,210,1);
+    cursor: pointer;
+}
+.containerReadyImg:hover{
+    transform: scale(0.95);
+    transition: all 1s;
+
+}
+.containerFooter{
+    width: 100%;
+    height: 15vh;
+    background-color: var(--violeta);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.containerFooterLogo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerFooterLogo img{
+    height: 80%;
+}
+.containerFooterDerechos{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-family: 'Jost';
+}
+.containerFooterRedes{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--rosa);
+    font-family: 'Electrolize';
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.redesMobile{
+    display: none;
+}
+
+.containerFooterIconos{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerFooterIconos article{
+    height: 100%;
+    width: 10%;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerFooterIconos img{
+    width: 45%;
+}
+.containerFooterIconos img:hover{
+    filter: drop-shadow(0px 0px 10px #3999d2);
+    transition: all .5s;
+    cursor:pointer;
+    display: inline;
+    transform: scale(1.1);
+}
+
+
+/*------RESPONSIVE DESING MOBILE-----*/
+
+@media (max-width: 1200px){
+    
+
+    .containerNavImg{
+        width: 30vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .containerNavImg img{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .containerTittle{
+        height: 50vh;
+    }
+    .containerTittle button{
+        width: 15vw;
+        height: 3vh;
+        font-size: 1rem;
+    }
+    .containerConsolas{
+        height: 15vh;
+    }
+    .containerConsolas img{
+        height: 20%;
+    }
+    .containerPlataforma h2{
+        font-size: 3rem;
+    }
+    .containerPlataforma a{
+        height: 15vh;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+    .containerPlataforma button{
+        font-size: 1rem;
+        width: 50%;
+        height: 20%;
+    }
+   .containerTittleAboutMe h2{
+    font-size: 4rem;
+   }
+   .containerAboutMeText{
+    font-size: 2.3rem;
+   }
+   .containerInstagram{
+    height: 50vh;
+   }
+   .containerInstagram a{
+    font-size:5rem;
+    margin-left: 55%;
+   }
+   .containerDiscord a{
+    font-size: 3rem;
+   }
+   .containerModalidades{
+    height: 70vh;
+   }
+   .containerModalidadesTittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    width: 100%;
+   }
+
+   .containerModalidadesOptions{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+   }
+
+  .containerOptionsImg{
+    width: 40%;
+    height: 20%;
+    margin: 0;
+  }
+  .containerOptionsTittle{
+    margin-top: 10%;
+  }
+  .containerOptionsTittle article{
+    font-size: 2rem;
+    margin: 2%;
+    height: 30%;
+  }
+  .containerOptionsDescription{
+    font-size: 1.8rem;
+  }
+  .containerOptionsButton{
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonOption{
+    width: 30%;
+    font-size: 2rem;
+  }
+   .containerReady{
+    height: 40vh;
+    flex-direction: column;
+   }
+   .containerReadyTittle{
+    width: 100%;
+    height: 20vh;
+
+   }
+   .buttonAction2{
+    font-size: 2rem;
+    width: 25vw;
+   }
+   .containerReadyImg{
+    display: none;
+   }
+   .containerFooterIconos img{
+    width: 95%;
+   }
+   .redesMobile {
+    display: flex;
+   }
+   .redesDesktop{
+    display: none;
+   }
+   .buttonWhatsapp{
+    top: 60vh;
+    left: 80vw;
+   }
+   .containerFooter{
+    z-index: 1000;
+    position: absolute;
+   }
+
+  }
+  
+  
